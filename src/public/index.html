@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Socket.io</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        #chat {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="bg-dark p-4" style="width: 100%; height: 100vh;">
+
+        <div id="chat-window" class="bg-primary p-4" style="height: 70vh;">
+            <div class="mb-1">
+                <input id="name" type="text" placeholder="Your name" class="form-control" style="width: 15%;">
+            </div>
+            <div id="chat" class="bg-light p-4" style="height: 50vh;"></div>
+        </div>
+        
+        <div id="text-box" class="p-4" style="display: flex; flex-direction: row;">
+            <textarea id="textarea" class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button id="btn" class="btn btn-success">Send</button>
+        </div>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>  
